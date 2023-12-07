@@ -1,53 +1,118 @@
 <!DOCTYPE html>
 <html lang="en-us">
+
 <head>
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Source Themes Academic 4.3.1">
-  <meta name="author" content="Trustworthy AI Lab">
-  <meta name="description" content=""> 
-  <link rel="alternate" hreflang="en-us" href="https://xialipku.github.io/"> 
-  <meta name="theme-color" content="#3f51b5">
+  <meta name="generator" content="Source Themes Academic 4.6.1">
+  <meta name="author" content="Jingyi Cui">
+  <meta name="description" content="Ph.D. student"> 
+  <link rel="alternate" hreflang="en-us" href="https://ZERO-Lab-PKU.github.io/">
+  <meta name="theme-color" content="#3f51b5">   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css" crossorigin="anonymous" title="hl-light">
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin="anonymous"> 
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono&display=swap">
-  <link rel="stylesheet" href="/css/academic.min.11931add725884fcc8742c523ca61145.css"> 
-  
-    <script>
-      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-      ga('create', 'UA-108004851-3', 'auto');
-      
-      ga('require', 'eventTracker');
-      ga('require', 'outboundLinkTracker');
-      ga('require', 'urlChangeTracker');
-      ga('send', 'pageview');
-    </script>
-    <script async src="//www.google-analytics.com/analytics.js"></script>
-    
-    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script> 
-  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Xia Li">
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="icon" type="image/png" href="/img/icon.png">
-  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+  <link rel="stylesheet" href="/css/academic.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-153875954-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
 
-  <link rel="canonical" href="https://xialipku.github.io/">
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           document.location = url;
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target);  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'UA-153875954-1', {});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
+  
+
+
+  
+  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="ZERO Lab">
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/img/logo-64.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+  <link rel="canonical" href="https://ZERO-Lab-PKU.github.io/"> 
   <meta property="twitter:card" content="summary">
   
-  <meta property="og:site_name" content="Xia Li">
-  <meta property="og:url" content="https://xialipku.github.io/">
-  <meta property="og:title" content="Xia Li">
-  <meta property="og:description" content=""><meta property="og:image" content="https://xialipku.github.io/img/icon-192.png">
-  <meta property="twitter:image" content="https://xialipku.github.io/img/icon-192.png"><meta property="og:locale" content="en-us">
-  <meta property="og:updated_time" content="2021-09-12T12:30:06&#43;01:00">
+  <meta property="og:site_name" content="ZERO Lab">
+  <meta property="og:url" content="https://ZERO-Lab-PKU.github.io/">
+  <meta property="og:title" content="ZERO Lab">
+  <meta property="og:description" content="Ph.D. student"><meta property="og:image" content="https://ZERO-Lab-PKU.github.io/img/icon-192.png">
+  <meta property="twitter:image" content="https://ZERO-Lab-PKU.github.io/img/icon-192.png"><meta property="og:locale" content="en-us">
   
+    <meta property="og:updated_time" content="2023-05-04T00:00:00&#43;00:00">
+ 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://ZERO-Lab-PKU.github.io?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  },
+  "url": "https://ZERO-Lab-PKU.github.io"
+}
+</script>
 
-  <title>Trustworthy AI Lab</title>
+
+  
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "EducationalOrganization",
+  "@id": "https://ZERO-Lab-PKU.github.io",
+  "name": "ZERO Laboratory in Peking University",
+  
+  
+  
+  
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Yiheyuan Road 5",
+    "addressLocality": "Beijing",
+    "addressRegion": "Beijing",
+    "postalCode": "100871",
+    "addressCountry": "CN"
+  },
+  
+  "telephone": "888 888 88 88",
+  "url": "https://ZERO-Lab-PKU.github.io"
+}
+</script>
+
+  <title>ZERO Lab</title>
 
 </head>
 
@@ -86,186 +151,2592 @@
 
 
   
-<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0 compensate-for-scrollbar" id="navbar-main">
-  <div class="container">
-      <a class="navbar-brand" href="/">TrustworthyAI-Sufe</a>
-      
-      <button type="button" class="navbar-toggler" data-toggle="collapse"
-              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-        <span><i class="fas fa-bars"></i></span>
-      </button>
-     
-    <div class="collapse navbar-collapse" id="navbar">
-      <ul class="navbar-nav mr-auto">
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">   
+      <a class="navbar-brand" href="/">ZERO Lab</a>   
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>   
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">     
+      <ul class="navbar-nav d-md-inline-flex">
+
         <li class="nav-item">
-          <a class="nav-link " href="/#about" data-target="#about"><span>Home</span></a>
+          <a class="nav-link " href="/#hero" data-target="#hero"><span>Home</span></a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link " href="/#posts" data-target="#posts"><span>News</span></a>
+          <a class="nav-link " href="/post/"><span>News</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="/people/"><span>People</span></a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link " href="/#featured" data-target="#featured"><span>Publications</span></a>
+          <a class="nav-link " href="/publication/"><span>Publications</span></a>
         </li>
-
-        <!-- <li class="nav-item">
-          <a class="nav-link " href="/#experience" data-target="#experience"><span>Internships</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " href="/#accomplishments" data-target="#accomplishments"><span>Awards</span></a>
-        </li> -->
 
         <li class="nav-item">
           <a class="nav-link " href="/#contact" data-target="#contact"><span>Contact</span></a>
         </li>
+      
       </ul>
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
-        </li>
-        
-        <li class="nav-item">
-          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
-        </li>
-      </ul>
-
     </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      <li class="nav-item">
+        <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+      </li>
+  
+    </ul>
+
   </div>
 </nav>
 
-
 <span class="js-widget-page d-none"></span>
 
-  <section id="about" class="home-section wg-about   "  >
+  <section id="hero" class="home-section wg-hero dark  bg-image parallax " style="background-color: navy;background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(&#39;https://ZERO-Lab-PKU.github.io/img/header.jpg&#39;);" >
     <div class="container">
- 
-<div class="row" itemprop="author" itemscope itemtype="http://schema.org/Person" itemref=" person-address">
+
+<div class="row">
+  <div class="col-6 mx-auto col-md-4 order-md-2 hero-media">
+    <img src="/img/logo-white.png" alt="">
+  </div>
+
+  <div class="col-md-8 order-md-1 text-center text-md-left">
 
 
-  <div class="col-12 col-lg-12" itemprop="description"> 
-    This is the website of Trustworthy AI Lab of Shanghai University of Finance and Economics. We are a research group focusing on the research of trustworthy AI. We are interested in the following topics:
-    Recommender System, Explainable Recommendation, Privacy-preserving Recommendation, Fairness-aware Recommendation, and so on.
-    <!-- <h1>Introduction</h1>
+    <h1 class="hero-title">
+      Zlin&rsquo;s Extraordinary Research Oasis
+    </h1>
 
-    <p>I&rsquo;m now a joint doctoral student of <a href="https://ethz.ch/en.html">ETH Zurich</a> and <a href="https://www.psi.ch/en">Paul Sherrer Institut</a>, supervised by Prof. <a href="https://de.wikipedia.org/wiki/Joachim_Buhmann">Joachim Buhmann</a>, Prof. <a href="https://www.phys.ethz.ch/the-department/people/person-detail.MTI0NzQy.TGlzdC84MzgsMTE3MjU5OTI5OQ==.html">Antony Lomax</a> and Dr. <a href="https://www.linkedin.com/in/ye-zhang-b5b9bb2b/?originalSubdomain=ch">Ye Zhang</a>.
-Previously, I obtained my Master&rsquo;s and Bachlor&rsquo;s degree from Peking University and Beijing University of Posts and Telecommunications, respectively.
-During my postgrade, I was fortunate to work with Prof. <a href="https://scholar.google.com/citations?user=4CQKG8oAAAAJ&hl=en">Hong Liu</a> and Prof. <a href="https://zhouchenlin.github.io/">Zhouchen Lin</a>.</p>
+    
+    <div class="hero-lead"><!-- raw HTML omitted -->
+<p><strong>Z</strong>eal, <strong>E</strong>xcellence, <strong>R</strong>eliability and <strong>O</strong>penness</p>
+<p>Welcome to the ZERO Lab, the research group lead by Prof. Zhouchen Lin (Zlin),
+affiliated to School of Artificial Intelligence, Peking University.
+We research on machine learning and computer vision.</p>
+</div>
+    
 
-<p>Now my research interest lies in the intersection of <b><i>image processing</i></b> technique and <b><i>radiation therapy</i></b>. My ultimate goal of my research is to reducing the cost of proton therapy from the algorithm perspective, and make it affordable by average people. Before studying medical image processing, I mainly work on <b><i>image and video segmentation</i></b>. I also have experience on <b><i>image restoration</i></b> and data mining.</p> -->
+    
 
-    <div class="row">
-    </div>
+  
+  
   </div>
 </div>
+
+
     </div>
   </section>
 
   
- 
+  
+  
 
-  <section id="featured" class="home-section wg-featured   "  >
-<div class="container">     
+  
+
+  
+
+  
+
+  
+    
+    
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  <section id="recruit" class="home-section wg-blank   " style="padding: 40px 0 40px 0;" >
+    <div class="container">
+      
+
+
 <div class="row">
-<div class="col-12 col-lg-2 section-heading">
-    <h3>Publications</h3>  
-  </div>
-<div class="col-12 col-lg-10">
-
-
-
-    <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
-      <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-      <span itemprop="author" class="article-metadata li-cite-author">
-        Zhu Sun, Di Yu, Hui Fang, Jie Yang, Xinghua Qu, Jie Zhang, Cong Geng
-         
-      </span><br>
+  
+    <div class="col-12 col-lg-4 section-heading">
+      <h1>Recruiting</h1>
       
-      <a href="https://dl.acm.org/doi/abs/10.1145/3383313.3412489" itemprop="name">Are We Evaluating Rigorously? Benchmarking Recommendation for Reproducible Evaluation and Fair Comparison</a>.
-      <br>
-      <i>
-        In Proceedings of&nbsp;ACM Conference on Recommender Systems&nbsp;(<b>RecSys</b>),
-      &nbsp;2020.
-      </i>
-      <p>
-    <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://dl.acm.org/doi/abs/10.1145/3383313.3412489" target="_blank" rel="noopener">
-      PDF
-    </a>
-    
-    <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://github.com/trustworthyai-sufe/daisyRec" target="_blank" rel="noopener">
-      Code
-    </a> 
-    </p>
     </div>
+    <div class="col-12 col-lg-8">
+      <ul>
+<li>Our group at Peking University is recruiting <!-- raw HTML omitted -->tenure-track faculties<!-- raw HTML omitted --> and PostDocs (<!-- raw HTML omitted -->academic<!-- raw HTML omitted --> or <!-- raw HTML omitted -->industrial<!-- raw HTML omitted -->). For the postdoc program in 2020, please refer to the <!-- raw HTML omitted -->Chinese version<!-- raw HTML omitted --> or the <!-- raw HTML omitted -->English version<!-- raw HTML omitted -->.</li>
+<li>Our group at Peking University is recruiting Ph.D.s who have strong mathematical abilities (however, this does not imply that you have to come from mathematics department) and great interest in theoretical analysis in order to enjoy with me how to use mathematics to solve real problems elegantly.</li>
+</ul>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
 
-
-
-    <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
-      <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-      <span itemprop="author" class="article-metadata li-cite-author">
-     
-      <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/lei-ke/">Lei Ke</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/buxia-li/u/b/"><b><u>Xia Li</u></b></a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/martin-danelljan/">Martin Danelljan</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/yu-wing-tai/">Yu-Wing Tai</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/chi-keung-tang/">Chi-Keung Tang</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/fisher-yu/">Fisher Yu</a></span>
-    
-      </span><br>
-      
-      <a href="/publication/pcan-neurips21/" itemprop="name">Prototypical Cross-Attention Networks for Multiple Object Tracking and Segmentation</a>.
-      <br>
-      <i>
-      In Proceedings of&nbsp;Advances in Neural Information Processing Systems&nbsp;(<b>NeurIPS</b>),
-      &nbsp;2021.
-      </i>
-      <p>
-    <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://arxiv.org/abs/2106.11958" target="_blank" rel="noopener">
-      PDF
-    </a>
-    
-    <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://github.com/SysCV/pcan" target="_blank" rel="noopener">
-      Code
-    </a>
-      
-    <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://youtu.be/Vt-kYDPfh10" target="_blank" rel="noopener">
-      Video
-    </a>
-    </p>
     </div>
-    
-  </div>
-  </div>
-  </div>
+  
+</div>
+
+    </div>
   </section>
 
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  <section id="posts" class="home-section wg-news   "  >
+    <div class="container">
+      
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+<div class="row">
+  <div class="col-12 col-lg-4 section-heading">
+    <h1>News</h1>
+    
+
+    
+  </div>
+  <div class="col-12 col-lg-8">
+
+    
+
+    
+      
+        
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="view-list-item">
+  <i class="far fa-newspaper pub-icon" aria-hidden="true"></i>
+  <a href="/post/ecml21_best/" >Our paper won the Best (Student) Machine Learning Paper Award at ECML 2021! </a>
+  <I>
+  
+  </I>
  
+  Sep 14, 2021.
+  
+  
+
+  
+
+  
+
+</div>
+
+      
+    
+      
+        
 
 
+
+
+
+
+
+
+
+
+  
+
+
+<div class="view-list-item">
+  <i class="far fa-newspaper pub-icon" aria-hidden="true"></i>
+  <a href="/post/lihuan21/" >Huan Li won 2020 ACM SIGAI China Excellent Doctoral Dissertation Award! </a>
+  <I>
+  
+  </I>
+ 
+  Aug 9, 2021.
+  
+  
+
+  
+
+  
+
+</div>
+
+      
+    
+      
+        
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="view-list-item">
+  <i class="far fa-newspaper pub-icon" aria-hidden="true"></i>
+  <a href="/post/wangyifei21/" >Our paper won the Silver Best Paper Award in the Adversarial Machine Learning Workshop at ICML 2021! </a>
+  <I>
+  
+  </I>
+ 
+  Aug 9, 2021.
+  
+  
+
+  
+
+  
+
+</div>
+
+      
+    
+      
+        
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="view-list-item">
+  <i class="far fa-newspaper pub-icon" aria-hidden="true"></i>
+  <a href="/post/icml21/" >Four papers were accepted by ICML 2021! Two are oral! </a>
+  <I>
+  
+  </I>
+ 
+  Jun 15, 2021.
+  
+  
+
+  
+
+  
+
+</div>
+
+      
+    
+      
+        
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="view-list-item">
+  <i class="far fa-newspaper pub-icon" aria-hidden="true"></i>
+  <a href="/post/kdd21/" >One paper was accepted by KDD 2021! </a>
+  <I>
+  
+  </I>
+ 
+  Jun 13, 2021.
+  
+  
+
+  
+
+  
+
+</div>
+
+      
+    
+      
+        
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="view-list-item">
+  <i class="far fa-newspaper pub-icon" aria-hidden="true"></i>
+  <a href="/post/sigir21/" >One paper was accepted by SIGIR 2021! </a>
+  <I>
+  
+  </I>
+ 
+  Jun 13, 2021.
+  
+  
+
+  
+
+  
+
+</div>
+
+      
+    
+
+    
+    <div class="see-all">
+      <a href="/post/">
+        See all posts
+        <i class="fas fa-angle-right"></i>
+      </a>
+    </div>
+    
+
+  </div>
+</div>
+
+    </div>
+  </section>
+
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  <section id="media_report" class="home-section wg-featured   "  >
+    <div class="container">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+  <div class="col-12 col-lg-4 section-heading">
+    <h1>Media Report</h1>
+    
+  </div>
+  <div class="col-12 col-lg-8">
+
+    
+
+    
+      
+        
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="card-simple">
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+
+
+  
+  
+    
+    
+    
+    <span>熊宇轩 （智源社区）</span>
+
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+          Last updated on
+      
+    
+    Sep 19, 2021
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+  
+  
+  
+  
+  <a href="/report/20210917/">
+      <img src="/report/20210917/featured_hu1c4ba62c2265e5e0df95cff2d9b17786_207769_918x317_fill_q90_lanczos_smart1_3.png" class="article-banner" alt="">
+  </a>
+  
+
+  <h3 class="article-title mb-1 mt-3">
+    <a href="/report/20210917/">北大林宙辰：追求机器学习研究的美感</a>
+  </h3>
+
+  
+  <div class="article-style">
+    <p><p><a href="https://mp.weixin.qq.com/s/VOeAAE3YTzQbdTOoFZOJAg">VIEW THE REPORT</a></p>
+</p>
+  </div>
+  
+
+  
+
+</div>
+
+      
+    
+      
+        
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="card-simple">
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+
+
+  
+  
+    
+    
+    
+    <span>HyperAI超神经</span>
+
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+          Last updated on
+      
+    
+    Sep 19, 2021
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+  
+  
+  
+  
+  <a href="/report/20210809/">
+      <img src="/report/20210809/featured_hu1c4ba62c2265e5e0df95cff2d9b17786_207769_918x317_fill_q90_lanczos_smart1_3.png" class="article-banner" alt="">
+  </a>
+  
+
+  <h3 class="article-title mb-1 mt-3">
+    <a href="/report/20210809/">跨界教授林宙辰：从北大来，回北大去</a>
+  </h3>
+
+  
+  <div class="article-style">
+    <p><p><a href="https://www.toutiao.com/i6994351751247725067/?tt_from=weixin&amp;utm_campaign=client_share&amp;wxshare_count=5&amp;timestamp=1628521770&amp;app=news_article&amp;utm_source=weixin&amp;utm_medium=toutiao_android&amp;use_new_style=1&amp;req_id=202108092309300101351550381F0A4FD2&amp;share_token=6b29823a-09f3-49d6-944f-9601a370f4a8&amp;group_id=6994351751247725067&amp;wid=1632018992070">VIEW THE REPORT</a></p>
+</p>
+  </div>
+  
+
+  
+
+</div>
+
+      
+    
+      
+        
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="card-simple">
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+
+
+  
+  
+    
+    
+    
+    <span>信科学生会 （大信科）</span>
+
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+          Last updated on
+      
+    
+    Sep 19, 2021
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+  
+  
+  
+  
+  <a href="/report/20191222/">
+      <img src="/report/20191222/featured_hu177c5082f5844760adb21619d94583b5_56516_918x317_fill_q90_lanczos_smart1.jpg" class="article-banner" alt="">
+  </a>
+  
+
+  <h3 class="article-title mb-1 mt-3">
+    <a href="/report/20191222/">学术 | 走进实验室： 林宙辰教授专访</a>
+  </h3>
+
+  
+  <div class="article-style">
+    <p><p><a href="https://mp.weixin.qq.com/s/Lzr9jQUS2g4CAhs9i2rEjw">VIEW THE REPORT</a></p>
+</p>
+  </div>
+  
+
+  
+
+</div>
+
+      
+    
+
+  </div>
+</div>
+
+    </div>
+  </section>
+
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  <section id="tags" class="home-section wg-tag-cloud   "  >
+    <div class="container">
+      
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+<div class="row">
+  <div class="col-12 col-lg-4 section-heading">
+    <h1>Topics</h1>
+    
+  </div>
+  <div class="col-12 col-lg-8">
+    
+
+    
+
+      
+      
+      
+      
+      
+
+      <div class="tag-cloud">
+        
+          
+          
+          
+          <a href="/tags/acceleration/" style="font-size:1.083804516540582rem">Acceleration</a>
+        
+          
+          
+          
+          <a href="/tags/admm/" style="font-size:1.3039404018258653rem">ADMM</a>
+        
+          
+          
+          
+          <a href="/tags/adversarial-robustness/" style="font-size:1.083804516540582rem">Adversarial Robustness</a>
+        
+          
+          
+          
+          <a href="/tags/adversarial-transferability/" style="font-size:0.4rem">Adversarial Transferability</a>
+        
+          
+          
+          
+          <a href="/tags/alternating-direction-method/" style="font-size:0.4rem">Alternating direction method</a>
+        
+          
+          
+          
+          <a href="/tags/alternating-direction-method-of-multipliers/" style="font-size:0.4rem">Alternating Direction Method of Multipliers</a>
+        
+          
+          
+          
+          <a href="/tags/bayes-error/" style="font-size:0.4rem">Bayes error</a>
+        
+          
+          
+          
+          <a href="/tags/boosting/" style="font-size:0.4rem">Boosting</a>
+        
+          
+          
+          
+          <a href="/tags/color-filter-array/" style="font-size:0.8rem">Color Filter Array</a>
+        
+          
+          
+          
+          <a href="/tags/compressed-sensing/" style="font-size:0.8rem">Compressed Sensing</a>
+        
+          
+          
+          
+          <a href="/tags/compressive-phase-retrieval/" style="font-size:0.4rem">Compressive Phase Retrieval,</a>
+        
+          
+          
+          
+          <a href="/tags/computer-vision/" style="font-size:1.6358774586948415rem">computer vision</a>
+        
+          
+          
+          
+          <a href="/tags/contextual-distance/" style="font-size:0.4rem">Contextual distance</a>
+        
+          
+          
+          
+          <a href="/tags/convergence-analysis/" style="font-size:0.8rem">Convergence Analysis</a>
+        
+          
+          
+          
+          <a href="/tags/convex-optimization/" style="font-size:1.083804516540582rem">Convex Optimization</a>
+        
+          
+          
+          
+          <a href="/tags/data-compression/" style="font-size:0.4rem">Data Compression</a>
+        
+          
+          
+          
+          <a href="/tags/deep-learning/" style="font-size:0.4rem">Deep Learning</a>
+        
+          
+          
+          
+          <a href="/tags/demosaicking/" style="font-size:1.3039404018258653rem">Demosaicking</a>
+        
+          
+          
+          
+          <a href="/tags/denoising/" style="font-size:0.4rem">Denoising</a>
+        
+          
+          
+          
+          <a href="/tags/dictionary-learning/" style="font-size:1.483804516540582rem">Dictionary Learning</a>
+        
+          
+          
+          
+          <a href="/tags/dimensionality-reduction/" style="font-size:1.083804516540582rem">Dimensionality reduction</a>
+        
+          
+          
+          
+          <a href="/tags/discriminant-analysis/" style="font-size:0.4rem">Discriminant analysis</a>
+        
+          
+          
+          
+          <a href="/tags/document-analysis/" style="font-size:0.4rem">Document analysis</a>
+        
+          
+          
+          
+          <a href="/tags/double-quantization/" style="font-size:0.4rem">Double quantization</a>
+        
+          
+          
+          
+          <a href="/tags/expectation-maximization/" style="font-size:0.4rem">Expectation Maximization</a>
+        
+          
+          
+          
+          <a href="/tags/face-recognition/" style="font-size:0.4rem">Face recognition</a>
+        
+          
+          
+          
+          <a href="/tags/feature-detection/" style="font-size:0.4rem">Feature detection</a>
+        
+          
+          
+          
+          <a href="/tags/feature-extraction/" style="font-size:1.8838045165405823rem">Feature extraction</a>
+        
+          
+          
+          
+          <a href="/tags/forgery/" style="font-size:0.4rem">forgery</a>
+        
+          
+          
+          
+          <a href="/tags/geometric-optimization/" style="font-size:0.4rem">Geometric Optimization</a>
+        
+          
+          
+          
+          <a href="/tags/handwriting-recognition/" style="font-size:1.083804516540582rem">Handwriting recognition</a>
+        
+          
+          
+          
+          <a href="/tags/image-annotation/" style="font-size:0.4rem">Image Annotation</a>
+        
+          
+          
+          
+          <a href="/tags/image-classification/" style="font-size:0.8rem">Image classification</a>
+        
+          
+          
+          
+          <a href="/tags/image-denoising/" style="font-size:0.4rem">Image Denoising</a>
+        
+          
+          
+          
+          <a href="/tags/image-processing/" style="font-size:0.4rem">Image Processing</a>
+        
+          
+          
+          
+          <a href="/tags/image-reconstruction/" style="font-size:0.8rem">Image Reconstruction</a>
+        
+          
+          
+          
+          <a href="/tags/image-rectification/" style="font-size:0.4rem">Image rectification</a>
+        
+          
+          
+          
+          <a href="/tags/image-restoration/" style="font-size:0.8rem">Image restoration</a>
+        
+          
+          
+          
+          <a href="/tags/image-retrieval/" style="font-size:0.4rem">Image Retrieval</a>
+        
+          
+          
+          
+          <a href="/tags/image-segmentation/" style="font-size:0.4rem">Image segmentation</a>
+        
+          
+          
+          
+          <a href="/tags/laplace-equations/" style="font-size:0.8rem">Laplace equations</a>
+        
+          
+          
+          
+          <a href="/tags/learning-based-pdes/" style="font-size:0.4rem">Learning-based PDEs</a>
+        
+          
+          
+          
+          <a href="/tags/light-field/" style="font-size:1.083804516540582rem">Light field</a>
+        
+          
+          
+          
+          <a href="/tags/linear-discriminant-analysis/" style="font-size:0.4rem">Linear discriminant analysis</a>
+        
+          
+          
+          
+          <a href="/tags/lorentzian-geometry/" style="font-size:0.4rem">Lorentzian geometry</a>
+        
+          
+          
+          
+          <a href="/tags/low-rank/" style="font-size:2.0817704489468984rem">Low Rank</a>
+        
+          
+          
+          
+          <a href="/tags/low-rank-representation/" style="font-size:1.483804516540582rem">Low Rank Representation</a>
+        
+          
+          
+          
+          <a href="/tags/low-level-vision/" style="font-size:0.4rem">Low-level vision</a>
+        
+          
+          
+          
+          <a href="/tags/lumigraph/" style="font-size:0.8rem">Lumigraph</a>
+        
+          
+          
+          
+          <a href="/tags/machine-learning/" style="font-size:0.4rem">Machine Learning</a>
+        
+          
+          
+          
+          <a href="/tags/majorization-minimization/" style="font-size:0.8rem">Majorization Minimization</a>
+        
+          
+          
+          
+          <a href="/tags/manifold-learning/" style="font-size:0.8rem">Manifold learning</a>
+        
+          
+          
+          
+          <a href="/tags/manifolds/" style="font-size:0.8rem">Manifolds</a>
+        
+          
+          
+          
+          <a href="/tags/matrix-completion/" style="font-size:1.083804516540582rem">Matrix Completion</a>
+        
+          
+          
+          
+          <a href="/tags/matrix-decomposition/" style="font-size:0.4rem">matrix decomposition</a>
+        
+          
+          
+          
+          <a href="/tags/metric-learning/" style="font-size:0.4rem">Metric learning</a>
+        
+          
+          
+          
+          <a href="/tags/mismatch-removal/" style="font-size:0.4rem">Mismatch Removal</a>
+        
+          
+          
+          
+          <a href="/tags/neural-network/" style="font-size:1.3039404018258653rem">Neural Network</a>
+        
+          
+          
+          
+          <a href="/tags/neural-networks/" style="font-size:0.4rem">Neural networks</a>
+        
+          
+          
+          
+          <a href="/tags/nonconvex-optimization/" style="font-size:0.8rem">Nonconvex Optimization</a>
+        
+          
+          
+          
+          <a href="/tags/optimal-control/" style="font-size:0.4rem">Optimal control</a>
+        
+          
+          
+          
+          <a href="/tags/optimization/" style="font-size:2.387744918366448rem">Optimization</a>
+        
+          
+          
+          
+          <a href="/tags/partial-differential-equation/" style="font-size:0.4rem">Partial Differential Equation</a>
+        
+          
+          
+          
+          <a href="/tags/plenoptic-functions/" style="font-size:0.4rem">plenoptic functions</a>
+        
+          
+          
+          
+          <a href="/tags/pose-estimation/" style="font-size:0.4rem">Pose Estimation</a>
+        
+          
+          
+          
+          <a href="/tags/principal-component-analysis/" style="font-size:1.483804516540582rem">Principal component analysis</a>
+        
+          
+          
+          
+          <a href="/tags/robust-pca/" style="font-size:0.8rem">Robust PCA</a>
+        
+          
+          
+          
+          <a href="/tags/robust-principal-component-analysis/" style="font-size:0.8rem">Robust Principal Component Analysis</a>
+        
+          
+          
+          
+          <a href="/tags/sampling/" style="font-size:0.8rem">sampling</a>
+        
+          
+          
+          
+          <a href="/tags/semantic-segmentation/" style="font-size:0.8rem">Semantic segmentation</a>
+        
+          
+          
+          
+          <a href="/tags/semi-supervised-learning/" style="font-size:1.083804516540582rem">Semi-supervised learning</a>
+        
+          
+          
+          
+          <a href="/tags/singular-value-decomposition/" style="font-size:0.4rem">Singular value decomposition</a>
+        
+          
+          
+          
+          <a href="/tags/sparse-coding/" style="font-size:0.4rem">Sparse Coding</a>
+        
+          
+          
+          
+          <a href="/tags/sparse-matrices/" style="font-size:1.3039404018258653rem">Sparse matrices</a>
+        
+          
+          
+          
+          <a href="/tags/sparse-representation/" style="font-size:1.483804516540582rem">Sparse Representation</a>
+        
+          
+          
+          
+          <a href="/tags/spectral-clustering/" style="font-size:0.8rem">Spectral clustering</a>
+        
+          
+          
+          
+          <a href="/tags/subspace-clustering/" style="font-size:2.387744918366448rem">Subspace clustering</a>
+        
+          
+          
+          
+          <a href="/tags/subspace-recovery/" style="font-size:1.083804516540582rem">Subspace Recovery</a>
+        
+          
+          
+          
+          <a href="/tags/super-resolution/" style="font-size:0.8rem">Super-Resolution</a>
+        
+          
+          
+          
+          <a href="/tags/superresolution/" style="font-size:1.3039404018258653rem">Superresolution</a>
+        
+      </div>
+    
+
+  </div>
+</div>
+
+    </div>
+  </section>
+
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  <section id="publications" class="home-section wg-pages   "  >
+    <div class="container">
+      
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+<div class="row">
+  <div class="col-12 col-lg-4 section-heading">
+    <h1>Latest Publications</h1>
+    
+  </div>
+  <div class="col-12 col-lg-8">
+
+    <!-- raw HTML omitted -->
+
+
+    
+      
+        
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+  
+
+
+<div class="media stream-item">
+  <div class="media-body">
+
+    <h3 class="article-title mb-0 mt-0">
+      <a href="/publication/2023/iclr23_neural-epdos-spatially-adaptive-equivariant-partial-differential-operator-based-networks/" >
+          
+              Neural ePDOs: Spatially Adaptive Equivariant Partial Differential Operator Based Networks. 
+          
+      </a>
+      <I>
+      ICLR,
+      
+      </I>
+      2023.
+      
+    </h3>
+
+    
+    <div class="article-style">
+      Endowing deep learning models with symmetry priors can lead to a considerable performance improvement. As an interesting bridge between …
+    </div>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+      <div>
+        
+
+
+
+  
+  
+    
+    
+    
+    <span><a href="/personwise/helingshen/">Lingshen He</a></span>
+    
+    
+    
+    , <span><a href="/personwise/chenyuxuan/">Yuxuan Chen</a></span>
+    
+    
+    
+    , <span>Zhenyang Shen</span>
+    
+    
+    
+    , <span><a href="/personwise/yangyibo/">Yibo Yang</a></span>
+    
+    
+    
+    , <span><a href="/personwise/linzhouchen/">Zhouchen Lin</a></span>
+
+      </div>
+      
+    </div>
+
+    
+    <div class="btn-links">
+      
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://openreview.net/forum?id=D1Iqfm7WTkk" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+    
+    <a href="/publication/2023/iclr23_neural-epdos-spatially-adaptive-equivariant-partial-differential-operator-based-networks/" >
+      <img src="/publication/2023/iclr23_neural-epdos-spatially-adaptive-equivariant-partial-differential-operator-based-networks/featured_hud33c2958d80d918ad610a259f6d33d51_203653_150x0_resize_lanczos_3.png" alt="">
+    </a>
+    
+  </div>
+</div>
+
+      
+    
+      
+        
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+  
+
+
+<div class="media stream-item">
+  <div class="media-body">
+
+    <h3 class="article-title mb-0 mt-0">
+      <a href="/publication/2022/icml22_optimization-induced-implicit-graph-diffusion/" >
+          
+              Optimization-induced Implicit Graph Diffusion. 
+          
+      </a>
+      <I>
+      ICML,
+      
+      </I>
+      2022.
+      
+    </h3>
+
+    
+    <div class="article-style">
+      Due to the over-smoothing issue, most existing graph neural networks can only capture limited de- pendencies with their inherently …
+    </div>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+      <div>
+        
+
+
+
+  
+  
+    
+    
+    
+    <span><a href="/personwise/chenqi/">Qi Chen</a></span>
+    
+    
+    
+    , <span><a href="/personwise/wangyifei/">Yifei Wang</a></span>
+    
+    
+    
+    , <span><a href="/personwise/wangyisen/">Yisen Wang</a></span>
+    
+    
+    
+    , <span>Jiansheng Yang</span>
+    
+    
+    
+    , <span><a href="/personwise/linzhouchen/">Zhouchen Lin</a></span>
+
+      </div>
+      
+    </div>
+
+    
+    <div class="btn-links">
+      
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://arxiv.org/pdf/2206.14418.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+  </div>
+</div>
+
+      
+    
+      
+        
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+  
+
+
+<div class="media stream-item">
+  <div class="media-body">
+
+    <h3 class="article-title mb-0 mt-0">
+      <a href="/publication/2022/nn22_training-much-deeper-spiking-neural-networks-with-a-small-number-of-time-steps/" >
+          
+              Training Much Deeper Spiking Neural Networks with a Small Number of Time-Steps. 
+          
+      </a>
+      <I>
+      Neural Networks,
+      
+      </I>
+      2022.
+      
+    </h3>
+
+    
+    <div class="article-style">
+      Spiking Neural Network (SNN) is a promising energy-efficient neural architecture when implemented on neuromorphic hardware. The …
+    </div>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+      <div>
+        
+
+
+
+  
+  
+    
+    
+    
+    <span><a href="/personwise/mengqingyan/">Qingyan Meng</a></span>
+    
+    
+    
+    , <span><a href="/personwise/yanshen/">Shen Yan</a></span>
+    
+    
+    
+    , <span><a href="/personwise/xiaomingqing/">Mingqing Xiao</a></span>
+    
+    
+    
+    , <span><a href="/personwise/wangyisen/">Yisen Wang</a></span>
+    
+    
+    
+    , <span><a href="/personwise/linzhouchen/">Zhouchen Lin</a></span>
+    
+    
+    
+    , <span>Zhi-Quan Luo</span>
+
+      </div>
+      
+    </div>
+
+    
+    <div class="btn-links">
+      
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://pdf.sciencedirectassets.com/271125/1-s2.0-S0893608022X00075/1-s2.0-S0893608022002064/main.pdf?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEC8aCXVzLWVhc3QtMSJIMEYCIQDJMRV4AfAZZWaVgICNKNPbZDbTjb2dsv6BgqtmXg%2B%2BWQIhAJXTjr8y%2FDq2QczGPWspOVaHeFY1XcRA3y%2BrSgJa3rmwKtIECFcQBBoMMDU5MDAzNTQ2ODY1Igw9fKa%2B5VuR3XecyZkqrwSSHbHJ8%2BxuwYkVB%2FKKwuvMIHJaCtZ4p6UyAp2CRmu4wuGh5BVq94Q0KMFLHAFVBM2yi8CCPWwqFzhr8G4stlZi9xWwvmaDIUfCW8N8qaokqdfULIBHDr9eRobGmj2tLZ%2FEK%2B3YLm2YLbma1LjUsrVInuEJRIytU8roR7vLlRP7ml5sy7Rx%2Fnttyh2EfpolnxBUyVTww5fZ4I6uyqaCKvZAb2QpbC8hcdfnZCg8TMt1QC57BieVtbYj6m2pdZ7AzR6yixm7dFDHvqHqsEbKwzuhtw5j1o414kHtI5Ace4sNOhosFGTlXFnYrKDF45sCYzn6HlBCcYH0FHFvLLBocjOgTVm0UIhDYcebGZCfg6pPJ8pzDFyYzV2jX1sYPnTvBur%2FA4yioD2HhXtuOZgTNryzk42zjzdcwUQXChi8EPspjys1izCLmlezHan1kxfFbMsLtvVD7ODtc3OSFBV9Zd6Gq1WhNdGDH0C1Xwd4ftnM8lGOAovai5YqSFINzk8sOKxkm%2FiZr%2FntN8WKWhAj0Dq8vF%2FYj1VuIotvsfH2XvjdetzgIzeLmwNWCSZN8%2BkLG7mele9Af7nnK9NuOo60%2Fu%2Fiihhj5K%2BEXdMp3Nas1tmVgK3Cgo%2Bl7lUGXJFz4HJd%2FLAdxZjsiaMTnXsM6NdwpxuyRymQZus4g8LxWQ1aMB0T4czNwXihh4hKOVBnAR3n6W5zFsH2NVrnCHWD1ffezWQeGxGWjrDsoKCjY3tjFsoVMI3D%2F5UGOqgBtHw52Fincyb2ZeSOoe30WK2kuGgiWd1hs7dnAPZa4rwjXi44xYWR%2BhQNKuafZuCWWj3RncZgofa4ltS%2F1FpfoONsWFYGoHYlvSzRdLFRdPLwBDJk%2FzZmJ4EmbBEVl1mBnCVxnyHa5Ml%2FTESNPCDxpsSLXdvuTnmN9zTNuossKHxV9YH4547Ei3KJG2DzX%2BtBT4XGDzfgTxvC6ahrYiZpfuARF4UeANDq&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20220702T074531Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Expires=300&amp;X-Amz-Credential=ASIAQ3PHCVTY6N5ZVFDJ%2F20220702%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Signature=81c2b79ee538733ba33283fbf823fc090189e91a8b7d6d05c96037eefa6fe150&amp;hash=e92ad2b0a0f0cb74c0c22948b9ca429e4c46d3a25fe30f645a538a6e2a77abbb&amp;host=68042c943591013ac2b2430a89b270f6af2c76d8dfd086a07176afe7c76c2c61&amp;pii=S0893608022002064&amp;tid=spdf-4696cb4d-8d25-4022-8fb1-0fa569584eed&amp;sid=89587cee4dfea645fe6bf38254f1ebeb303bgxrqa&amp;type=client&amp;ua=4d56505b0d5450025400&amp;rr=7245c32c6b787c97" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+    
+    <a href="/publication/2022/nn22_training-much-deeper-spiking-neural-networks-with-a-small-number-of-time-steps/" >
+      <img src="/publication/2022/nn22_training-much-deeper-spiking-neural-networks-with-a-small-number-of-time-steps/featured_hu8e51b3fb318eedaa77d80c8fd55e4445_61325_150x0_resize_lanczos_3.png" alt="">
+    </a>
+    
+  </div>
+</div>
+
+      
+    
+      
+        
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+  
+
+
+<div class="media stream-item">
+  <div class="media-body">
+
+    <h3 class="article-title mb-0 mt-0">
+      <a href="/publication/2022/cvpr22_training-high-performance-low-latency-spiking-neural-networks-by-differentiation-on-spike-representation/" >
+          
+              Training High-Performance Low-Latency Spiking Neural Networks by Differentiation on Spike Representation. 
+          
+      </a>
+      <I>
+      CVPR,
+      
+      </I>
+      2022.
+      
+    </h3>
+
+    
+    <div class="article-style">
+      Spiking Neural Network (SNN) is a promising energy-efficient AI model when implemented on neuromorphic hardware. However, it is a …
+    </div>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+      <div>
+        
+
+
+
+  
+  
+    
+    
+    
+    <span><a href="/personwise/mengqingyan/">Qingyan Meng</a></span>
+    
+    
+    
+    , <span><a href="/personwise/xiaomingqing/">Mingqing Xiao</a></span>
+    
+    
+    
+    , <span><a href="/personwise/yanshen/">Shen Yan</a></span>
+    
+    
+    
+    , <span><a href="/personwise/wangyisen/">Yisen Wang</a></span>
+    
+    
+    
+    , <span><a href="/personwise/linzhouchen/">Zhouchen Lin</a></span>
+    
+    
+    
+    , <span>Zhi-Quan Luo</span>
+
+      </div>
+      
+    </div>
+
+    
+    <div class="btn-links">
+      
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://arxiv.org/abs/2205.00459" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://github.com/qymeng94/DSR" target="_blank" rel="noopener">
+  Code
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+    
+    <a href="/publication/2022/cvpr22_training-high-performance-low-latency-spiking-neural-networks-by-differentiation-on-spike-representation/" >
+      <img src="/publication/2022/cvpr22_training-high-performance-low-latency-spiking-neural-networks-by-differentiation-on-spike-representation/featured_hudd5eca11c5dd9f0334eb170e1714a59c_84246_150x0_resize_lanczos_3.png" alt="">
+    </a>
+    
+  </div>
+</div>
+
+      
+    
+      
+        
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+  
+
+
+<div class="media stream-item">
+  <div class="media-body">
+
+    <h3 class="article-title mb-0 mt-0">
+      <a href="/publication/2021/nips21_training_feedback_spiking_neural_networks_by_implicit_differentiation_on_the_equilibrium_state/" >
+          
+              Training Feedback Spiking Neural Networks by Implicit Differentiation on the Equilibrium State. 
+          
+      </a>
+      <I>
+      NeurIPS,
+      
+      </I>
+      2021.
+      
+    </h3>
+
+    
+    <div class="article-style">
+      Spiking neural networks (SNNs) are brain-inspired models that enable energy-efficient implementation on neuromorphic hardware. However, …
+    </div>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+      <div>
+        
+
+
+
+  
+  
+    
+    
+    
+    <span><a href="/personwise/xiaomingqing/">Mingqing Xiao</a></span>
+    
+    
+    
+    , <span><a href="/personwise/mengqingyan/">Qingyan Meng</a></span>
+    
+    
+    
+    , <span><a href="/personwise/zhangzongpeng/">Zongpeng Zhang</a></span>
+    
+    
+    
+    , <span><a href="/personwise/wangyisen/">Yisen Wang</a></span>
+    
+    
+    
+    , <span><a href="/personwise/linzhouchen/">Zhouchen Lin</a></span>
+
+      </div>
+      
+    </div>
+
+    
+    <div class="btn-links">
+      
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://openreview.net/pdf?id=f2Llmm_z5Sm" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://github.com/pkuxmq/IDE-FSNN" target="_blank" rel="noopener">
+  Code
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+    
+    <a href="/publication/2021/nips21_training_feedback_spiking_neural_networks_by_implicit_differentiation_on_the_equilibrium_state/" >
+      <img src="/publication/2021/nips21_training_feedback_spiking_neural_networks_by_implicit_differentiation_on_the_equilibrium_state/featured_hu0a6d325e0fc35acebb82579ba228b8b6_21411_150x0_resize_lanczos_3.png" alt="">
+    </a>
+    
+  </div>
+</div>
+
+      
+    
+      
+        
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+  
+
+
+<div class="media stream-item">
+  <div class="media-body">
+
+    <h3 class="article-title mb-0 mt-0">
+      <a href="/publication/2021/ecml-pkdd21_reparameterized_sampling_for_generative_adversarial_networks/" >
+          
+              Reparameterized Sampling for Generative Adversarial Networks. 
+          
+      </a>
+      <I>
+      ECML-PKDD,
+      
+      </I>
+      2021.
+      
+    </h3>
+
+    
+    <div class="article-style">
+      Recently, sampling methods have been successfully applied to enhance the sample quality of Generative Adversarial Networks (GANs). …
+    </div>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+      <div>
+        
+
+
+
+  
+  
+    
+    
+    
+    <span><a href="/personwise/wangyifei/">Yifei Wang</a></span>
+    
+    
+    
+    , <span><a href="/personwise/wangyisen/">Yisen Wang</a></span>
+    
+    
+    
+    , <span>Jiansheng Yang</span>
+    
+    
+    
+    , <span><a href="/personwise/linzhouchen/">Zhouchen Lin</a></span>
+
+      </div>
+      
+    </div>
+
+    
+    <div class="btn-links">
+      
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://2021.ecmlpkdd.org/wp-content/uploads/2021/07/sub_600.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+    
+    <a href="/publication/2021/ecml-pkdd21_reparameterized_sampling_for_generative_adversarial_networks/" >
+      <img src="/publication/2021/ecml-pkdd21_reparameterized_sampling_for_generative_adversarial_networks/featured_hu660bddb9cb189bee6d4bd4ed5138f679_84250_150x0_resize_lanczos_3.png" alt="">
+    </a>
+    
+  </div>
+</div>
+
+      
+    
+      
+        
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+  
+
+
+<div class="media stream-item">
+  <div class="media-body">
+
+    <h3 class="article-title mb-0 mt-0">
+      <a href="/publication/2021/icml21_demystifying_adversarial_training_via_a_unified_probabilistic_framework/" >
+          
+              Demystifying Adversarial Training via A Unified Probabilistic Framework. 
+          
+      </a>
+      <I>
+      ICML workshop 2021,
+      
+      </I>
+      2021.
+      
+    </h3>
+
+    
+    <div class="article-style">
+      Adversarial Training (AT) is known as an effective approach to enhance the robustness of deep neural networks. Recently researchers …
+    </div>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+      <div>
+        
+
+
+
+  
+  
+    
+    
+    
+    <span><a href="/personwise/wangyifei/">Yifei Wang</a></span>
+    
+    
+    
+    , <span><a href="/personwise/wangyisen/">Yisen Wang</a></span>
+    
+    
+    
+    , <span>Jiansheng Yang</span>
+    
+    
+    
+    , <span><a href="/personwise/linzhouchen/">Zhouchen Lin</a></span>
+
+      </div>
+      
+    </div>
+
+    
+    <div class="btn-links">
+      
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://openreview.net/pdf?id=U0TCTe68s41" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+  </div>
+</div>
+
+      
+    
+      
+        
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+  
+
+
+<div class="media stream-item">
+  <div class="media-body">
+
+    <h3 class="article-title mb-0 mt-0">
+      <a href="/publication/2021/cvpr21_pointflow_flowing_semantics_through_points_for_aerial_image_segmentation/" >
+          
+              PointFlow: Flowing Semantics Through Points for Aerial Image Segmentation. 
+          
+      </a>
+      <I>
+      CVPR,
+      
+      </I>
+      2021.
+      
+    </h3>
+
+    
+    <div class="article-style">
+      Aerial Image Segmentation is a particular semantic segmentation problem and has several challenging characteristics that general …
+    </div>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+      <div>
+        
+
+
+
+  
+  
+    
+    
+    
+    <span>Xiangtai Li</span>
+    
+    
+    
+    , <span>Hao He</span>
+    
+    
+    
+    , <span><a href="/personwise/lixia/">Xia Li</a></span>
+    
+    
+    
+    , <span>Duo Li</span>
+    
+    
+    
+    , <span>Guangliang Cheng</span>
+    
+    
+    
+    , <span>Jianping Shi</span>
+    
+    
+    
+    , <span>Lubin Weng</span>
+    
+    
+    
+    , <span>Yunhai Tong</span>
+    
+    
+    
+    , <span><a href="/personwise/linzhouchen/">Zhouchen Lin</a></span>
+
+      </div>
+      
+    </div>
+
+    
+    <div class="btn-links">
+      
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://arxiv.org/pdf/2103.06564v1.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://github.com/lxtGH/PFSegNets" target="_blank" rel="noopener">
+  Code
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+    
+    <a href="/publication/2021/cvpr21_pointflow_flowing_semantics_through_points_for_aerial_image_segmentation/" >
+      <img src="/publication/2021/cvpr21_pointflow_flowing_semantics_through_points_for_aerial_image_segmentation/featured_hu9ae571169ed20a8ce0b5695ee0a75ce0_451951_150x0_resize_lanczos_3.png" alt="">
+    </a>
+    
+  </div>
+</div>
+
+      
+    
+
+    
+    <div class="see-all">
+      <a href="/publication/">
+        See all publications
+        <i class="fas fa-angle-right"></i>
+      </a>
+    </div>
+    
+
+  </div>
+</div>
+
+    </div>
+  </section>
+
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
 
   <section id="contact" class="home-section wg-contact   "  >
     <div class="container">
+      
+
+
+
+
 
 <div class="row contact-widget">
-  <div class="col-12 col-lg-2 section-heading">
-    <h3>Contact</h3>
+  <div class="col-12 col-lg-4 section-heading">
+    <h1>Contact</h1>
     
+
+    <li>
+      <i class="fa-li fas fa-compass fa-2x" aria-hidden="true"></i>
+      <span>Wechat account</span>
+      <div class="col-12 col-lg-6 offset-lg-0">
+        <img src="img/wechat.jpg" alt="">
+      </div>
+    </li>
+ 
+    
+
+
   </div>
-  <div class="col-12 col-lg-10">
-    <ul class="fa-ul" itemscope>
-     
-      <li>
-        <i class="fa-li fas fa-map-marker fa-2x" aria-hidden="true"></i>
-        <span id="person-address" itemprop="address">Guoding Road No.777, Yangpu district, Shanghai, China</span>
-      </li>
+  <div class="col-12 col-lg-8">
+    
+
+    
+
+    
+    
+      
+      
+    
+
+    <div class="mb-3">
+      
+    </div>
+    
+
+    <ul class="fa-ul">
+
+      
+
+      
+
+      
+
+      
 
     </ul>
 
     
-    <!-- <div class="d-none">
+    <div class="d-none">
       <input id="map-provider" value="2">
-      <input id="map-lat" value="47.41297774050527">
-      <input id="map-lng" value="8.547427119106155">
-      <input id="map-dir" value="OAT Y 29, Andreasstrasse 5, 8092 Zürich, Switzerland">
-      <input id="map-zoom" value="15">
+      <input id="map-lat" value="39.9914">
+      <input id="map-lng" value="116.3041">
+      <input id="map-dir" value="Yiheyuan Road 5, Beijing, Beijing 100871">
+      <input id="map-zoom" value="14">
       <input id="map-api-key" value="">
     </div>
-    <div id="map"></div> -->
+    <div id="map"></div>
     
 
   </div>
@@ -274,36 +2745,59 @@ During my postgrade, I was fortunate to work with Prof. <a href="https://scholar
     </div>
   </section>
 
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-108004851-3', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
-  
+
+
+      
+
+    
+    
+    
+    <script src="/js/mathjax-config.js"></script>
+    
+
+    
+    
+    
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js" integrity="sha256-aYTdUrn6Ow1DDgh5JTc3aDGnnju48y/1c8s1dgkYPQ8=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+
+      
+
+      
         
-        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/r.min.js"></script>
- 
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js" integrity="sha256-1zu+3BnLYV9LdiY85uXMzii3bdrkelyp37e0ZyTAQh0=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/r.min.js"></script>
+        
+      
+
+      
+      
+      <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
     
-    <script>hljs.initHighlightingOnLoad();</script>
-   
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    
+    
+    
+    
     <script>
-      const search_index_filename = "/index.json";
-      const i18n = {
-        'placeholder': "Search...",
-        'results': "results found",
-        'no_results': "No results found"
-      };
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
       const content_type = {
         'post': "Posts",
         'project': "Projects",
@@ -311,7 +2805,13 @@ if (!doNotTrack) {
         'talk' : "Talks"
         };
     </script>
-   
+    
+
+    
+    
+
+    
+    
     <script id="search-hit-fuse-template" type="text/x-template">
       <div class="search-hit" id="summary-{{key}}">
       <div class="search-hit-content">
@@ -324,23 +2824,57 @@ if (!doNotTrack) {
       </div>
     </script>
     
+
+    
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
-    <script src="/js/academic.min.31a6b268a1074bc800cf69e59192cb35.js"></script>
+    
 
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.ac75b49cabdd0cbdaaf571f4c4fe7e35.js"></script>
+
+    
+
+
+
+
+
+
+  
+  
   <div class="container">
     <footer class="site-footer">
   
 
   <p class="powered-by">
-    &copy; 2023 &middot; 
-
-    Powered by Xia Li @ ETHZ
     
+
+    Powered by the <a href="https://xialipku.github.io">Xia Li</a> @ ZERO Lab,
+    <a href="http://www.pku.edu.cn" target="_blank" rel="noopener">Peking University</a>.
 
     
     <span class="float-right" aria-hidden="true">
-      <a href="#" id="back_to_top">
+      <a href="#" class="back-to-top">
         <span class="button_icon">
           <i class="fas fa-chevron-up fa-2x"></i>
         </span>
