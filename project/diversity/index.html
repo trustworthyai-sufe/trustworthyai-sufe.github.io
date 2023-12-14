@@ -57,6 +57,25 @@
   <meta property="twitter:image" content="https://trustworthyai-sufe.github.io/img/sufe_logo.png"><meta property="og:locale" content="en-us">
       <meta property="article:published_time" content="2021-06-15T00:00:00&#43;00:00">
     <meta property="article:modified_time" content="2021-06-16T17:29:58&#43;08:00">
+  <style>
+    /* 居中图片的容器 */
+    .center-container {
+      text-align: center;
+    }
+
+    /* 图片样式 */
+    .center-container img {
+      display: block;
+      margin: 0 auto; /* 设置左右边距为auto使其居中 */
+    }
+
+    /* 标题样式 */
+    .caption {
+      text-align: center;
+      font-size: smaller; /* 设置字体大小为较小值 */
+      color: gray; /* 设置字体颜色为灰色 */
+    }
+  </style>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -84,7 +103,7 @@
 }
 </script>
 
-  <title>NeurIPS 2023</title>
+  <title>Diversity</title>
 </head>
 <body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
   <aside class="search-results" id="search">
@@ -126,6 +145,9 @@
           <a class="nav-link  active" href="/post/"><span>News</span></a>
         </li>
         <li class="nav-item">
+          <a class="nav-link " href="/project/"><span>Projects</span></a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link " href="/people/"><span>People</span></a>
         </li>
         <li class="nav-item">
@@ -149,15 +171,34 @@
 
 
 <div class="article-container pt-3">
-  <h1>One papers was accepted by CIKM 2023</h1>
+  <h1>Understanding Diversity in Session-based Recommendation</h1>
 
-  <p>The paper 
-  <a href="https://dl.acm.org/doi/abs/10.1145/3583780.3615512">
-    "CPMR: Context-Aware Incremental Sequential Recommendation with Pseudo-Multi-Task Learning"
-  </a> 
-    was accepted by CIKM2023, whose authors are  
-    Qingtian Bian,Jiaxing Xu,Hui Fang,Yiping Ke
+
+<p>Current session-based recommender systems (SBRSs) mainly focus on maximizing recommendation accuracy,
+  while few studies have been devoted to improve diversity beyond accuracy. Meanwhile, it is unclear how the
+  accuracy-oriented SBRSs perform in terms of diversity. In addition, the asserted “tradeoff” relationship between accuracy and diversity has been increasingly questioned in the literature. Toward the aforementioned
+  issues, we conduct a holistic study to particularly examine the recommendation performance of representative SBRSs w.r.t. both accuracy and diversity, striving for better understanding of the diversity-related issues
+  for SBRSs and providing guidance on designing diversified SBRSs. Particularly, for a fair and thorough comparison, we deliberately select state-of-the-art non-neural, deep neural, and diversified SBRSs by covering more
+  scenarios with appropriate experimental setups, e.g., representative datasets, evaluation metrics, and hyperparameter optimization technique. 
+  
+  
+  <p>Our empirical results unveil that (1) non-diversified methods can also obtain satisfying
+  performance on diversity, which can even surpass diversified ones, and (2) the relationship between accuracy
+  and diversity is quite complex. Besides the “tradeoff” relationship, they can be positively correlated with each
+  other, that is, having a same-trend (win–win or lose–lose) relationship, which varies across different methods and datasets. Additionally, we further identify three possible influential factors on diversity in SBRSs
+  (i.e., granularity of item categorization, session diversity of datasets, and length of recommendation lists) and
+  offer an intuitive guideline and a potential solution regarding learned item embeddings for more effective
+  session-based recommendation. </p>
+
+<p>The full paper can be seen via   
+  <a href="https://dl.acm.org/doi/10.1145/3600226">
+    "Understanding Diversity in Session-based Recommendation"
+  </a> (TOIS 2023), and the code is released at 
+  <a href="https://github.com/qyin863/Understanding-Diversity-in-SBRSs">
+    UnderstandingDiversity-in-SBRSs
+  </a>. 
     </p>
+
 
 <div class="article-metadata">
   <div>
@@ -165,11 +206,10 @@
   </div>
   <span class="article-date">
           Last updated on
-    Dec 08, 2023
+    Dec 14, 2023
   </span>
 </div>
 </div>
-
 
 
   <div class="article-container">
