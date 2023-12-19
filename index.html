@@ -56,6 +56,17 @@
   <meta property="og:description" content="Ph.D. student"><meta property="og:image" content="https://trustworthyai-sufe.github.io/img/sufe_logo.png">
   <meta property="twitter:image" content="https://trustworthyai-sufe.github.io/img/sufe_logo.png"><meta property="og:locale" content="en-us">
     <meta property="og:updated_time" content="2023-05-04T00:00:00&#43;00:00">
+
+  function switchLanguage() {
+    var elements = document.querySelectorAll('[data-lang]');
+    elements.forEach(function(el) {
+        if (el.style.display === 'none') {
+            el.style.display = '';
+        } else {
+            el.style.display = 'none';
+        }
+    });
+}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -139,23 +150,32 @@
       </ul>
     </div>
     <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
-      <li class="nav-item">
+      <!-- <li class="nav-item">
         <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
       </li>
       <li class="nav-item">
         <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
-      </li>
+      </li> -->
+      <button onclick="switchLanguage()">Switch Language</button>
     </ul>
   </div>
 </nav>
+
+
 <span class="js-widget-page d-none"></span>
 
   <section id="hero" class="home-section wg-hero dark  bg-image parallax " style="background-color: #8f433e;" >
     <div class="container">
 <div class="row" itemprop="author" itemscope itemtype="http://schema.org/Person" itemref=" person-address">
   <div class="col-12 col-lg-12" itemprop="description"> 
-    This is the website of Trustworthy AI Lab of Shanghai University of Finance and Economics. We are a research group focusing on the research of Trustworthy AI in recommender systems, healthcare and so on. 
-    </div>
+    <!-- This is the website of Trustworthy AI Lab of Shanghai University of Finance and Economics. We are a research group focusing on the research of Trustworthy AI in recommender systems, healthcare and so on.  -->
+    <span data-lang="en">
+      This is the website of Trustworthy AI Lab of Shanghai University of Finance and Economics. We are a research group focusing on the research of Trustworthy AI in recommender systems, healthcare and so on.
+  </span>
+  <span data-lang="zh" style="display: none;">
+      这是上海财经大学可信人工智能实验室的网站。我们专注于可信人工智能在推荐系统、医疗保健等方面的研究。
+  </span>
+  </div>
   </section>
 
 
