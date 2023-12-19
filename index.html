@@ -57,16 +57,28 @@
   <meta property="twitter:image" content="https://trustworthyai-sufe.github.io/img/sufe_logo.png"><meta property="og:locale" content="en-us">
     <meta property="og:updated_time" content="2023-05-04T00:00:00&#43;00:00">
 
-  function switchLanguage() {
-    var elements = document.querySelectorAll('[data-lang]');
-    elements.forEach(function(el) {
-        if (el.style.display === 'none') {
-            el.style.display = '';
-        } else {
-            el.style.display = 'none';
-        }
-    });
-}
+    function switchLanguage() {
+      var elementsEn = document.querySelectorAll('[data-lang="en"]');
+      var elementsZh = document.querySelectorAll('[data-lang="zh"]');
+      
+      elementsEn.forEach(function(el) {
+          if (window.getComputedStyle(el).display === 'none') {
+              el.style.display = '';
+          } else {
+              el.style.display = 'none';
+          }
+      });
+  
+      elementsZh.forEach(function(el) {
+          if (window.getComputedStyle(el).display === 'none') {
+              el.style.display = '';
+          } else {
+              el.style.display = 'none';
+          }
+      });
+  }
+
+  
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -156,7 +168,7 @@
       <li class="nav-item">
         <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
       </li> -->
-      <button onclick="switchLanguage()">Switch Language</button>
+      <button onclick="switchLanguage()">中文版</button>
     </ul>
   </div>
 </nav>
