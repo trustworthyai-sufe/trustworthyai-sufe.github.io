@@ -18,6 +18,9 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
   <link rel="stylesheet" href="/css/academic.css">
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-153875954-1"></script>
+
+<script src="../language.js"></script>
+
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag() {
@@ -88,23 +91,38 @@
             data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
     <span><i class="fas fa-bars"></i></span>
     </button>
-    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">     
       <ul class="navbar-nav d-md-inline-flex">
         <li class="nav-item">
-          <a class="nav-link " href="/#hero"><span>Home</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link  active" href="/post/"><span>News</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " href="/project/"><span>Projects</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " href="/people/"><span>People</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " href="/publication/"><span>Publications</span></a>
-        </li>
+          <a class="nav-link" href="/#hero" data-target="#hero">
+              <span data-lang="en">Home</span>
+              <span data-lang="zh" style="display: none;">首页</span>
+          </a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="/post/">
+              <span data-lang="en">News</span>
+              <span data-lang="zh" style="display: none;">新闻</span>
+          </a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="/project/">
+              <span data-lang="en">Projects</span>
+              <span data-lang="zh" style="display: none;">项目</span>
+          </a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="/people/">
+              <span data-lang="en">People</span>
+              <span data-lang="zh" style="display: none;">成员</span>
+          </a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="/publication/">
+              <span data-lang="en">Publications</span>
+              <span data-lang="zh" style="display: none;">学术发表</span>
+          </a>
+      </li>      
       </ul>
     </div>
     <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">

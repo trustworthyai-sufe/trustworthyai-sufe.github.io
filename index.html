@@ -18,6 +18,9 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
   <link rel="stylesheet" href="/css/academic.css">
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-153875954-1"></script>
+
+<script src="language.js"></script>
+
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag() {
@@ -43,28 +46,6 @@
   gtag('js', new Date());
   gtag('config', 'UA-153875954-1', {});
   document.addEventListener('click', onClickCallback, false);
-
-
-  function switchLanguage() {
-      var elementsEn = document.querySelectorAll('[data-lang="en"]');
-      var elementsZh = document.querySelectorAll('[data-lang="zh"]');
-      
-      elementsEn.forEach(function(el) {
-          if (window.getComputedStyle(el).display === 'none') {
-              el.style.display = '';
-          } else {
-              el.style.display = 'none';
-          }
-      });
-  
-      elementsZh.forEach(function(el) {
-          if (window.getComputedStyle(el).display === 'none') {
-              el.style.display = '';
-          } else {
-              el.style.display = 'none';
-          }
-      });
-  }
 </script>
 
 
@@ -252,7 +233,7 @@
     <div class="see-all">
       <a href="/post/">
         <span data-lang="en">See all posts</span>
-        <span data-lang="zh" style="display: none;">查看所有新闻</span>
+        <span data-lang="zh" style="display: none;">所有新闻</span>
         <i class="fas fa-angle-right"></i>
       </a>
     </div>
@@ -390,15 +371,15 @@
 
 
 
-
-
-
     <div class="see-all">
-      <a href="/publication/">
-        See all publications
+      <a href="/post/">
+        <span data-lang="en">See all publications</span>
+        <span data-lang="zh" style="display: none;">所有学术发表</span>
         <i class="fas fa-angle-right"></i>
       </a>
     </div>
+
+
   </div>
 </div>
     </div>
