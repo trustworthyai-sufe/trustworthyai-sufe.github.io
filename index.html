@@ -44,6 +44,7 @@
   gtag('config', 'UA-153875954-1', {});
   document.addEventListener('click', onClickCallback, false);
 
+
   function switchLanguage() {
       var elementsEn = document.querySelectorAll('[data-lang="en"]');
       var elementsZh = document.querySelectorAll('[data-lang="zh"]');
@@ -145,20 +146,35 @@
     <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">     
       <ul class="navbar-nav d-md-inline-flex">
         <li class="nav-item">
-          <a class="nav-link " href="/#hero" data-target="#hero"><span>Home</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " href="/post/"><span>News</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " href="/project/"><span>Projects</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " href="/people/"><span>People</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " href="/publication/"><span>Publications</span></a>
-        </li>
+          <a class="nav-link" href="/#hero" data-target="#hero">
+              <span data-lang="en">Home</span>
+              <span data-lang="zh" style="display: none;">首页</span>
+          </a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="/post/">
+              <span data-lang="en">News</span>
+              <span data-lang="zh" style="display: none;">新闻</span>
+          </a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="/project/">
+              <span data-lang="en">Projects</span>
+              <span data-lang="zh" style="display: none;">项目</span>
+          </a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="/people/">
+              <span data-lang="en">People</span>
+              <span data-lang="zh" style="display: none;">成员</span>
+          </a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="/publication/">
+              <span data-lang="en">Publications</span>
+              <span data-lang="zh" style="display: none;">学术发表</span>
+          </a>
+      </li>      
       </ul>
     </div>
     <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
@@ -199,43 +215,48 @@
 <div class="row">
 
   <div class="col-12 col-lg-4 section-heading">
-    <h1>News</h1>
+    <h1 data-lang="en">News</h1>
+    <h1 data-lang="zh" style="display: none;">新闻</h1>
   </div>
 
 
   <div class="col-12 col-lg-8">
 
-<div class="view-list-item">
-  <i class="far fa-newspaper pub-icon" aria-hidden="true"></i>
-  <a href="/post/nips23/" >One paper was accepted by NeurIPS2023! </a>
-  <I>
-  </I>
-  Dec 08, 2023.
-</div>
-
-<div class="view-list-item">
-  <i class="far fa-newspaper pub-icon" aria-hidden="true"></i>
-  <a href="/post/cikm23/" >One paper was accepted by CIKM 2023! </a>
-  <I>
-  </I>
-  Dec 08, 2023.
-</div>
-
-<div class="view-list-item">
-  <i class="far fa-newspaper pub-icon" aria-hidden="true"></i>
-  <a href="/post/tois23/" >Two papers were accepted by TOIS 2023! </a>
-  <I>
-  </I>
-  Dec 08,2023.
-</div>
-
-
-<div class="see-all">
-  <a href="/post/">
-    See all posts
-    <i class="fas fa-angle-right"></i>
-  </a>
-</div>
+    <div class="view-list-item">
+      <i class="far fa-newspaper pub-icon" aria-hidden="true"></i>
+      <a href="/post/nips23/" >
+        <span data-lang="en">One paper was accepted by NeurIPS2023!</span>
+        <span data-lang="zh" style="display: none;">一篇论文被 NeurIPS2023 接受！</span>
+      </a>
+      <span>Dec 08, 2023.</span>
+    </div>
+    
+    <div class="view-list-item">
+      <i class="far fa-newspaper pub-icon" aria-hidden="true"></i>
+      <a href="/post/cikm23/" >
+        <span data-lang="en">One paper was accepted by CIKM 2023!</span>
+        <span data-lang="zh" style="display: none;">一篇论文被 CIKM 2023 接受！</span>
+      </a>
+      <span>Dec 08, 2023.</span>
+    </div>
+    
+    <div class="view-list-item">
+      <i class="far fa-newspaper pub-icon" aria-hidden="true"></i>
+      <a href="/post/tois23/" >
+        <span data-lang="en">Two papers were accepted by TOIS 2023!</span>
+        <span data-lang="zh" style="display: none;">两篇论文被 TOIS 2023 接受！</span>
+      </a>
+      <span>Dec 08, 2023.</span>
+    </div>
+    
+    <div class="see-all">
+      <a href="/post/">
+        <span data-lang="en">See all posts</span>
+        <span data-lang="zh" style="display: none;">查看所有新闻</span>
+        <i class="fas fa-angle-right"></i>
+      </a>
+    </div>
+    
 
   </div>
 </div>
@@ -252,7 +273,8 @@
     <div class="container">
 <div class="row">
   <div class="col-12 col-lg-4 section-heading">
-    <h1>Publications</h1>
+    <h1 data-lang="en">Publications</h1>
+    <h1 data-lang="zh" style="display: none;">学术发表</h1>
   </div>
 
   <div class="col-12 col-lg-8">
@@ -390,21 +412,23 @@
 <div class="row">
 
   <div class="col-12 col-lg-4 section-heading">
-    <h1>Activities</h1>
+    <h1 data-lang="en">Activities</h1>
+    <h1 data-lang="zh" style="display: none;">活动</h1>
   </div>
-
+  
   <div class="col-12 col-lg-8">
     <div style="float: left; margin-right: 20px;">
-        <img src="photos/jubensha.jpg" alt="Activity 1 Image" width="300">
-        <p>murder mystery game (2022)</p>
+      <img src="photos/jubensha.jpg" alt="Activity 1 Image" width="300">
+      <p data-lang="en">Murder Mystery Game (2022)</p>
+      <p data-lang="zh" style="display: none;">剧本杀(2022年)</p>
     </div>
-
+  
     <div style="float: left;">
-        <img src="photos/jucan202306.jpg" alt="Activity 2 Image" width="300">
-        <p>graduation dinner (2023)</p>
+      <img src="photos/jucan202306.jpg" alt="Activity 2 Image" width="300">
+      <p data-lang="en">Graduation Dinner (2023.06)</p>
+      <p data-lang="zh" style="display: none;">毕业聚餐(2023年6月)</p>
     </div>
-
-    <!-- 可以继续添加更多活动和图片 -->
+  </div>
 
     <div style="clear: both;"></div> <!-- 清除浮动，确保后续元素不受影响 -->
 
