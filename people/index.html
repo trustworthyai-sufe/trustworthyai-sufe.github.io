@@ -44,6 +44,9 @@
   gtag('config', 'UA-153875954-1', {});
   document.addEventListener('click', onClickCallback, false);
 </script>
+
+<script src="../language.js"></script>
+
   <link rel="manifest" href="/index.webmanifest">
   <link rel="icon" type="image/png" href="/img/sufe_logo.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/sufe_logo.png">
@@ -87,23 +90,38 @@
             data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
     <span><i class="fas fa-bars"></i></span>
     </button>
-    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">     
       <ul class="navbar-nav d-md-inline-flex">
         <li class="nav-item">
-          <a class="nav-link " href="/#hero"><span>Home</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " href="/post/"><span>News</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " href="/project/"><span>Projects</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link  active" href="/people/" data-target="[]"><span>People</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " href="/publication/"><span>Publications</span></a>
-        </li>
+          <a class="nav-link" href="/#hero" data-target="#hero">
+              <span data-lang="en">Home</span>
+              <span data-lang="zh" style="display: none;">首页</span>
+          </a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="/post/">
+              <span data-lang="en">News</span>
+              <span data-lang="zh" style="display: none;">新闻</span>
+          </a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="/project/">
+              <span data-lang="en">Projects</span>
+              <span data-lang="zh" style="display: none;">项目</span>
+          </a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="/people/">
+              <span data-lang="en">People</span>
+              <span data-lang="zh" style="display: none;">成员</span>
+          </a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="/publication/">
+              <span data-lang="en">Publications</span>
+              <span data-lang="zh" style="display: none;">学术发表</span>
+          </a>
+      </li>      
       </ul>
     </div>
     <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
@@ -119,22 +137,29 @@
 <span class="js-widget-page d-none"></span>
   <section id="people" class="home-section wg-people   "  >
     <div class="container">
-<div class="row justify-content-center people-widget">
+
+<div class="universal-wrapper">
   <div class="col-md-12 section-heading">
-    <h1>People</h1>
+    <h1 data-lang="en">People</h1>
+    <h1 data-lang="zh" style="display: none;">成员</h1>
   </div>
 
   
   <div class="col-md-12">
-    <h2 class="mb-4">Professor</h2>
+    <h2 class="mb-4" data-lang="en">Professor</h2>
+    <h2 class="mb-4" data-lang="zh" style="display: none;">教师</h2>
   </div>
 
   <div class="col-12 col-sm-auto people-person">
       <a><img class="portrait" src="/people/fanghui/fanghui.jpeg" alt="Avatar" style="width: 100px; height: 120px;"></a>
     <div class="portrait-title">
-      <h2><a>Hui Fang</a></h2>
-          <h3>Associate Professor</h3>
-          <h3><a href="https://www.sufe.edu.cn/">Shanghai University of Finance and Economics</a></h3>
+      <h2><a data-lang="en">Hui Fang</a><a data-lang="zh" style="display: none;">方慧</a></h2>
+      <h3 data-lang="en">Associate Professor</h3>
+      <h3 data-lang="zh" style="display: none;">副教授</h3>
+      <h3>
+        <a href="https://www.sufe.edu.cn/" data-lang="en">Shanghai University of Finance and Economics</a>
+        <a href="https://www.sufe.edu.cn/" data-lang="zh" style="display: none;">上海财经大学</a>
+      </h3>
       <ul class="network-icon" aria-hidden="true">
     <li>
       <a href="https://fangh.org/" target="_blank" rel="noopener">
@@ -156,14 +181,16 @@
 
 
   <div class="col-md-12">
-    <h2 class="mb-4">Current Students</h2>
+    <h2 class="mb-4" data-lang="en">Current Students</h2>
+    <h2 class="mb-4" data-lang="zh" style="display: none;">当前学生</h2>
   </div>
 
   <div class="col-12 col-sm-auto people-person">
     <!-- <a ><img class="portrait" src="/people/zhaweijie/zhaweijie.jpg" alt="Avatar" style="width: 100px; height: 120px;"></a> -->
   <div class="portrait-title">
-    <h2><a>Weijie Zha</a></h2>
-        <h3>Ph.D. candidate (2018 - present)</h3>
+    <h2><a data-lang="en">Weijie Zha</a><a data-lang="zh" style="display: none;">查炜洁</a></h2>
+      <h3 data-lang="en">Ph.D. candidate (2018 - present)</h3>
+      <h3 data-lang="zh" style="display: none;">博士生 (2018 - 至今)</h3>
     <ul class="network-icon" aria-hidden="true">
 </ul>
     <br>
@@ -174,8 +201,9 @@
   <div class="col-12 col-sm-auto people-person">
       <!-- <a ><img class="portrait" src="/people/huwentao/huwentao.jpg" alt="Avatar" style="width: 100px; height: 120px;"></a> -->
     <div class="portrait-title">
-      <h2><a>Wentao Hu</a></h2>
-          <h3>Ph.D. candidate (2020 - present)</h3>
+      <h2><a data-lang="en">Wentao Hu</a><a data-lang="zh" style="display: none;">胡文涛</a></h2>
+      <h3 data-lang="en">Ph.D. candidate (2020 - present)</h3>
+      <h3 data-lang="zh" style="display: none;">博士生 (2020 - 至今)</h3>
       <ul class="network-icon" aria-hidden="true">
 </ul>
       <br>
@@ -188,8 +216,9 @@
   <div class="col-12 col-sm-auto people-person">
     <!-- <a ><img class="portrait" src="/people/zhouhan/zhouhan.jpg" alt="Avatar" style="width: 100px; height: 120px;"></a> -->
   <div class="portrait-title">
-    <h2><a>Han Zhou</a></h2>
-        <h3>Ph.D. candidate (2022 - present)</h3>
+    <h2><a data-lang="en">Han Zhou</a><a data-lang="zh" style="display: none;">周菡</a></h2>
+      <h3 data-lang="en">Ph.D. candidate (2022 - present)</h3>
+      <h3 data-lang="zh" style="display: none;">博士生 (2022 - 至今)</h3>
     <ul class="network-icon" aria-hidden="true">
 </ul>
     <br>
@@ -201,8 +230,9 @@
 <div class="col-12 col-sm-auto people-person">
   <!-- <a ><img class="portrait" src="/people/zhangshuai/zhangshuai.jpg" alt="Avatar" style="width: 100px; height: 120px;"></a> -->
 <div class="portrait-title">
-  <h2><a>Shuai Zhang</a></h2>
-      <h3>Ph.D. candidate (2023 - present)</h3>
+  <h2><a data-lang="en">Shuai Zhang</a><a data-lang="zh" style="display: none;">张帅</a></h2>
+      <h3 data-lang="en">Ph.D. candidate (2023 - present)</h3>
+      <h3 data-lang="zh" style="display: none;">博士生 (2023 - 至今)</h3>
   <ul class="network-icon" aria-hidden="true">
 </ul>
   <br>
@@ -215,8 +245,9 @@
 <div class="col-12 col-sm-auto people-person">
   <!-- <a ><img class="portrait" src="/people/dengxiaofeng/dengxiaofeng.jpg" alt="Avatar" style="width: 100px; height: 120px;"></a> -->
 <div class="portrait-title">
-  <h2><a>Xiaofeng Deng</a></h2>
-      <h3>Master Student (2021 - present)</h3>
+  <h2><a data-lang="en">Xiaofeng Deng</a><a data-lang="zh" style="display: none;">邓晓峰</a></h2>
+      <h3 data-lang="en">Master Student (2021 - present)</h3>
+      <h3 data-lang="zh" style="display: none;">硕士生 (2021 - 至今)</h3>
   <ul class="network-icon" aria-hidden="true">
 </ul>
   <br>
@@ -229,8 +260,9 @@
   <div class="col-12 col-sm-auto people-person">
     <!-- <a ><img class="portrait" src="/people/wangjunhuan/wangjunhuan.jpg" alt="Avatar" style="width: 100px; height: 120px;"></a> -->
   <div class="portrait-title">
-    <h2><a>Junhuan Wang</a></h2>
-        <h3>Master Student (2022 - present)</h3>
+    <h2><a data-lang="en">Junhuan Wang</a><a data-lang="zh" style="display: none;">王浚寰</a></h2>
+      <h3 data-lang="en">Master Student (2022 - present)</h3>
+      <h3 data-lang="zh" style="display: none;">硕士生 (2022 - 至今)</h3>
     <ul class="network-icon" aria-hidden="true">
 </ul>
     <br>
@@ -242,8 +274,9 @@
   <div class="col-12 col-sm-auto people-person">
     <!-- <a ><img class="portrait" src="/people/luoyaying/luoyaying.jpg" alt="Avatar" style="width: 100px; height: 120px;"></a> -->
   <div class="portrait-title">
-    <h2><a>Yaying Luo</a></h2>
-        <h3>Master Student (2022 - present)</h3>
+    <h2><a data-lang="en">Yaying Luo</a><a data-lang="zh" style="display: none;">罗雅莹</a></h2>
+      <h3 data-lang="en">Master Student (2022 - present)</h3>
+      <h3 data-lang="zh" style="display: none;">硕士生 (2022 - 至今)</h3>
     <ul class="network-icon" aria-hidden="true">
 </ul>
     <br>
@@ -256,8 +289,9 @@
 <div class="col-12 col-sm-auto people-person">
   <!-- <a ><img class="portrait" src="/people/fengxu/fengxu.jpg" alt="Avatar" style="width: 100px; height: 120px;"></a> -->
 <div class="portrait-title">
-  <h2><a>Xu Feng</a></h2>
-      <h3>Master Student (2023 - present)</h3>
+  <h2><a data-lang="en">Xu Feng</a><a data-lang="zh" style="display: none;">冯旭</a></h2>
+      <h3 data-lang="en">Master Student (2023 - present)</h3>
+      <h3 data-lang="zh" style="display: none;">硕士生 (2023 - 至今)</h3>
   <ul class="network-icon" aria-hidden="true">
 </ul>
   <br>
@@ -269,8 +303,9 @@
 <div class="col-12 col-sm-auto people-person">
   <!-- <a ><img class="portrait" src="/people/wangxingzi/wangxingzi.jpg" alt="Avatar" style="width: 100px; height: 120px;"></a> -->
 <div class="portrait-title">
-  <h2><a>Xingzi Wang</a></h2>
-      <h3>Master Student (2023 - present)</h3>
+  <h2><a data-lang="en">Xingzi Wang</a><a data-lang="zh" style="display: none;">王星紫</a></h2>
+      <h3 data-lang="en">Master Student (2023 - present)</h3>
+      <h3 data-lang="zh" style="display: none;">硕士生 (2023 - 至今)</h3>
   <ul class="network-icon" aria-hidden="true">
 </ul>
   <br>
@@ -282,8 +317,9 @@
 <div class="col-12 col-sm-auto people-person">
   <!-- <a ><img class="portrait" src="/people/guoshuya/guoshuya.jpg" alt="Avatar" style="width: 100px; height: 120px;"></a> -->
 <div class="portrait-title">
-  <h2><a>Shuya Guo</a></h2>
-      <h3>Master Student (2023 - present)</h3>
+  <h2><a data-lang="en">Shuya Guo</a><a data-lang="zh" style="display: none;">郭书雅</a></h2>
+      <h3 data-lang="en">Master Student (2023 - present)</h3>
+      <h3 data-lang="zh" style="display: none;">硕士生 (2023 - 至今)</h3>
   <ul class="network-icon" aria-hidden="true">
 </ul>
   <br>
@@ -294,16 +330,19 @@
 
 
   <div class="col-md-12">
-    <h2 class="mb-4">Alumnis/Alumnas</h2>
+    <h2 class="mb-4" data-lang="en">Alumnis/Alumnas</h2>
+    <h2 class="mb-4" data-lang="zh" style="display: none;">校友</h2>
   </div>
 
 
   <div class="col-12 col-sm-auto people-person">
     <!-- <a ><img class="portrait" src="/people/yudi/yudi.jpg" alt="Avatar" style="width: 100px; height: 120px;"></a> -->
   <div class="portrait-title">
-    <h2><a>Di Yu</a></h2>
-        <h3>Master (2017 - 2019)</h3>
-        <h3>Phd candidate at Zhejiang University</h3>
+    <h2><a data-lang="en">Di Yu</a><a data-lang="zh" style="display: none;">余帝</a></h2>
+      <h3 data-lang="en">Master (2017 - 2019)</h3>
+      <h3 data-lang="zh" style="display: none;">硕士 (2017 - 2019)</h3>
+      <h3 data-lang="en">Phd candidate at Zhejiang University</h3>
+      <h3 data-lang="zh" style="display: none;">浙江大学博士生</h3>
     <ul class="network-icon" aria-hidden="true">
 </ul>
     <br>
@@ -315,8 +354,9 @@
 <div class="col-12 col-sm-auto people-person">
   <!-- <a ><img class="portrait" src="/people/zhangyan/zhangyan.jpg" alt="Avatar" style="width: 100px; height: 120px;"></a> -->
 <div class="portrait-title">
-  <h2><a>Yan Zhang</a></h2>
-      <h3>Master (2017 - 2019)</h3>
+  <h2><a data-lang="en">Yan Zhang</a><a data-lang="zh" style="display: none;">张焱</a></h2>
+      <h3 data-lang="en">Master (2017 - 2019)</h3>
+      <h3 data-lang="zh" style="display: none;">硕士 (2017 - 2019)</h3>
   <ul class="network-icon" aria-hidden="true">
 </ul>
   <br>
@@ -329,9 +369,11 @@
 <div class="col-12 col-sm-auto people-person">
   <!-- <a ><img class="portrait" src="/people/wuhuizi/wuhuizi.jpg" alt="Avatar" style="width: 100px; height: 120px;"></a> -->
 <div class="portrait-title">
-  <h2><a>Huizi Wu</a></h2>
-      <h3>Phd (2018 - 2023)</h3>
-      <h3>National Academy of Education Sciences</h3>
+  <h2><a data-lang="en">Huizi Wu</a><a data-lang="zh" style="display: none;">武卉紫</a></h2>
+      <h3 data-lang="en">Phd (2018 - 2023)</h3>
+      <h3 data-lang="zh" style="display: none;">博士 (2018 - 2023)</h3>
+      <h3 data-lang="en">National Academy of Education Sciences</h3>
+      <h3 data-lang="zh" style="display: none;">中国教育科学研究院</h3>
   <ul class="network-icon" aria-hidden="true">
 </ul>
   <br>
@@ -343,8 +385,9 @@
 <div class="col-12 col-sm-auto people-person">
   <!-- <a ><img class="portrait" src="/people/yinqing/yinqing.jpg" alt="Avatar" style="width: 100px; height: 120px;"></a> -->
 <div class="portrait-title">
-  <h2><a>Qing Yin</a></h2>
-      <h3>Phd (2018 - 2023)</h3>
+  <h2><a data-lang="en">Qing Yin</a><a data-lang="zh" style="display: none;">殷擎</a></h2>
+      <h3 data-lang="en">Phd (2018 - 2023)</h3>
+      <h3 data-lang="zh" style="display: none;">博士 (2018 - 2023)</h3>
   <ul class="network-icon" aria-hidden="true">
 </ul>
   <br>
@@ -355,9 +398,12 @@
 
 <div class="col-12 col-sm-auto people-person">
 <div class="portrait-title">
-  <h2><a>Xin Wen</a></h2>
-      <h3>Master (2018 - 2020)</h3>
-      <h3>Vipshop</h3>
+  <h2><a data-lang="en">Xin Wen</a><a data-lang="zh" style="display: none;">文心</a></h2>
+      <h3 data-lang="en">Master (2018 - 2020)</h3>
+      <h3 data-lang="zh" style="display: none;">硕士 (2018 - 2020)</h3>
+      <h3 data-lang="en">Vipshop</h3>
+      <h3 data-lang="zh" style="display: none;">唯品会</h3>
+  <ul class="network-icon" aria-hidden="true">
   <ul class="network-icon" aria-hidden="true">
 </ul>
   <br>
@@ -369,9 +415,11 @@
 <div class="col-12 col-sm-auto people-person">
   <!-- <a ><img class="portrait" src="/people/suhong/suhong.jpg" alt="Avatar" style="width: 100px; height: 120px;"></a> -->
 <div class="portrait-title">
-  <h2><a>Hong Su</a></h2>
-      <h3>Master (2018 - 2020)</h3>
-      <h3>Ruigu</h3>
+  <h2><a data-lang="en">Hong Su</a><a data-lang="zh" style="display: none;">苏虹</a></h2>
+      <h3 data-lang="en">Master (2018 - 2020)</h3>
+      <h3 data-lang="zh" style="display: none;">硕士 (2018 - 2020)</h3>
+      <h3 data-lang="en">Ruigu</h3>
+      <h3 data-lang="zh" style="display: none;">锐锢</h3>
   <ul class="network-icon" aria-hidden="true">
 </ul>
   <br>
@@ -383,9 +431,11 @@
 <div class="col-12 col-sm-auto people-person">
   <!-- <a ><img class="portrait" src="/people/gengcong/gengcong.jpg" alt="Avatar" style="width: 100px; height: 120px;"></a> -->
 <div class="portrait-title">
-  <h2><a>Cong Geng</a></h2>
-      <h3>Master (2019 - 2022)</h3>
-      <h3>AntGroup</h3>
+  <h2><a data-lang="en">Cong Geng</a><a data-lang="zh" style="display: none;">耿聪</a></h2>
+      <h3 data-lang="en">Master (2019 - 2022)</h3>
+      <h3 data-lang="zh" style="display: none;">硕士 (2019 - 2022)</h3>
+      <h3 data-lang="en">AntGroup</h3>
+      <h3 data-lang="zh" style="display: none;">蚂蚁集团</h3>
   <ul class="network-icon" aria-hidden="true">
 </ul>
   <br>
@@ -397,9 +447,11 @@
   <div class="col-12 col-sm-auto people-person">
     <!-- <a ><img class="portrait" src="/people/huangyulin/huangyulin.jpg" alt="Avatar" style="width: 100px; height: 120px;"></a> -->
   <div class="portrait-title">
-    <h2><a>Yulin Huang</a></h2>
-        <h3>Master (2019 - 2021)</h3>
-        <h3>JD.com</h3>
+    <h2><a data-lang="en">Yulin Huang</a><a data-lang="zh" style="display: none;">黄玉琳</a></h2>
+      <h3 data-lang="en">Master (2019 - 2021)</h3>
+      <h3 data-lang="zh" style="display: none;">硕士 (2019 - 2021)</h3>
+      <h3 data-lang="en">JD Group</h3>
+      <h3 data-lang="zh" style="display: none;">京东集团</h3>
     <ul class="network-icon" aria-hidden="true">
 </ul>
     <br>
@@ -411,9 +463,11 @@
 <div class="col-12 col-sm-auto people-person">
   <!-- <a ><img class="portrait" src="/people/zhangdanning/zhangdanning.jpg" alt="Avatar" style="width: 100px; height: 120px;"></a> -->
 <div class="portrait-title">
-  <h2><a>Danning Zhang</a></h2>
-      <h3>Master (2019 - 2021)</h3>
-      <h3>Agricultural Bank of China</h3>
+  <h2><a data-lang="en">Danning Zhang</a><a data-lang="zh" style="display: none;">张丹宁</a></h2>
+      <h3 data-lang="en">Master (2019 - 2021)</h3>
+      <h3 data-lang="zh" style="display: none;">硕士 (2019 - 2021)</h3>
+      <h3 data-lang="en">Agricultural Bank of China</h3>
+      <h3 data-lang="zh" style="display: none;">中国农业银行</h3>
   <ul class="network-icon" aria-hidden="true">
 </ul>
   <br>
@@ -425,9 +479,12 @@
 <div class="col-12 col-sm-auto people-person">
   <!-- <a ><img class="portrait" src="/people/qinlu/qinlu.jpg" alt="Avatar" style="width: 100px; height: 120px;"></a> -->
 <div class="portrait-title">
-  <h2><a>Lu Qin</a></h2>
-      <h3>Master (2020 - 2022)</h3>
-      <h3>AntGroup</h3>
+  <h2><a data-lang="en">Lu Qin</a><a data-lang="zh" style="display: none;">覃露</a></h2>
+      <h3 data-lang="en">Master (2020 - 2022)</h3>
+      <h3 data-lang="zh" style="display: none;">硕士 (2020 - 2022)</h3>
+      <h3 data-lang="en">AntGroup</h3>
+      <h3 data-lang="zh" style="display: none;">蚂蚁集团</h3>
+
   <ul class="network-icon" aria-hidden="true">
 </ul>
   <br>
