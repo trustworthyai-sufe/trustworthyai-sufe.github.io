@@ -48,6 +48,20 @@
   document.addEventListener('click', onClickCallback, false);
 </script>
 
+<style>
+  .language-switcher {
+    border: none;
+    background-color: #8f433e;
+    color: white; /* 可以根据需要调整字体颜色 */
+    padding: 10px 20px; /* 可以根据需要调整内边距 */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px; /* 可以根据需要调整字体大小 */
+    margin: 4px 2px;
+    cursor: pointer;
+}
+</style>
 
   <link rel="alternate" href="/index.xml" type="application/rss+xml" title="ZERO Lab">
   <link rel="manifest" href="/index.webmanifest">
@@ -123,7 +137,8 @@
     <button type="button" class="navbar-toggler" data-toggle="collapse"
             data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
     <span><i class="fas fa-bars"></i></span>
-    </button>   
+    </button>  
+
     <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">     
       <ul class="navbar-nav d-md-inline-flex">
         <li class="nav-item">
@@ -165,7 +180,8 @@
       <li class="nav-item">
         <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
       </li> -->
-      <button onclick="switchLanguage()">中英切换</button>
+      <button onclick="switchLanguage()" class="language-switcher">中/英</button>
+
     </ul>
   </div>
 </nav>
